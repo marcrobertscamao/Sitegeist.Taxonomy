@@ -12,7 +12,7 @@ use Neos\ContentRepository\Domain\Service\ContextFactoryInterface;
 use Neos\ContentRepository\Domain\Service\NodeTypeManager;
 use Neos\ContentRepository\Domain\Repository\NodeDataRepository;
 use Neos\Flow\Persistence\PersistenceManagerInterface;
-use Neos\Flow\Log\SystemLoggerInterface;
+use Neos\Flow\Log\PsrSystemLoggerInterface;
 
 /**
  * Class TaxonomyService
@@ -23,7 +23,7 @@ class TaxonomyService
 {
 
     /**
-     * @var SystemLoggerInterface
+     * @var PsrSystemLoggerInterface
      * @Flow\Inject
      */
     protected $systemLogger;
